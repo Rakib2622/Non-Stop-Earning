@@ -18,21 +18,20 @@
             <div class="container">
             	<div class="row">
                 	<div class="map-section__overlay-wrapper">
-                        <div class="map-section__overlay">
-                            {{-- <h3 class="h4">Our store</h3>
+                        {{-- <div class="map-section__overlay">
+                            <h3 class="h4">Our store</h3>
                             <div class="rte-setting">
                                 <p>123 Fake St.<br>Toronto, Canada</p>
                                 <p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm</p>
-                            </div> --}}
+                            </div>
                             <p><a href="https://maps.google.com/?daddr=80%20Spadina%20Ave,%20Toronto" class="btn btn--secondary btn--small" target="_blank">Get directions</a></p>
-                        </div>
+                        </div> --}}
                    	</div>
                 </div>
             </div>
         </div>
         <div class="bredcrumbWrap">
             <div class="container breadcrumbs">
-                <a href="index.html" title="Back to the home page">Home</a><span aria-hidden="true">›</span><span>Contact Us</span>
             </div>
         </div>
         

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: white;
+            background-color: rgb(196, 219, 224);
             font-family: 'Arial', sans-serif;
         }
         .register-container {
@@ -15,7 +15,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            padding: 20px;
+            padding: 30px;
         }
         .register-form {
             width: 100%;
@@ -55,7 +55,7 @@
         }
         .form-header {
             text-align: center;
-            margin-top: 100px;
+            margin-top: 30px;
             margin-bottom: 20px;
         }
         .form-header h2 {
@@ -78,15 +78,9 @@
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="first_name">{{ __('First Name') }}<span class="required">*</span></label>
-                    <input id="first_name" class="form-control" type="text" name="first_name" required>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="last_name">{{ __('Last Name') }}<span class="required">*</span></label>
-                    <input id="last_name" class="form-control" type="text" name="last_name" required>
-                </div>
+            <div class="form-group mt-4">
+                <label for="name">{{ __('Name') }}<span class="required">*</span></label>
+                <input id="name" class="form-control" type="text" name="name" value="{{ old('name') }}" required>
             </div>
 
             <div class="form-row mt-4">
@@ -94,31 +88,35 @@
                     <label for="language">{{ __('Choose your language') }}<span class="required">*</span></label>
                     <select id="language" class="form-control" name="language" required>
                         <option value="" disabled selected>Select Language</option>
-                        <!-- Add your language options here -->
+                        <option value="English">{{ __('English') }}</option>
+                        <option value="Spanish">{{ __('Spanish') }}</option>
+                        <option value="Bangla">{{ __('Bangla') }}</option>
                     </select>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="country">{{ __('Choose your country') }}<span class="required">*</span></label>
                     <select id="country" class="form-control" name="country" required>
                         <option value="" disabled selected>Select Country</option>
-                        <!-- Add your country options here -->
+                        <option value="Afganisthan">{{ __('Afganisthan') }}</option>
+                        <option value="Bangladesh">{{ __('Bangladesh') }}</option>
+                        <option value="USA">{{ __('USA') }}</option>
                     </select>
                 </div>
             </div>
 
             <div class="form-group mt-4">
                 <label for="whatsapp">{{ __('Enter WhatsApp No.') }}<span class="required">*</span></label>
-                <input id="whatsapp" class="form-control" type="text" name="whatsapp" required>
+                <input id="whatsapp" class="form-control" type="text" name="whatsapp" value="{{ old('whatsapp') }}" required>
             </div>
 
             <div class="form-row mt-4">
                 <div class="form-group col-md-6">
                     <label for="email">{{ __('Enter Email') }}<span class="required">*</span></label>
-                    <input id="email" class="form-control" type="email" name="email" required>
+                    <input id="email" class="form-control" type="email" name="email" value="{{ old('email') }}" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="reference">{{ __('Enter Reference') }}<span class="required">*</span></label>
-                    <input id="reference" class="form-control" type="text" name="reference">
+                    <input id="reference" class="form-control" type="text" name="reference" value="{{ old('reference') }}">
                 </div>
             </div>
 
@@ -127,22 +125,26 @@
                 <input id="password" class="form-control" type="password" name="password" required>
             </div>
 
+            <div class="form-group mt-4">
+                <label for="password_confirmation">{{ __('Confirm Password') }}<span class="required">*</span></label>
+                <input id="password_confirmation" class="form-control" type="password" name="password_confirmation" required>
+            </div>
+
             <div class="form-group form-check mt-4">
                 <input id="terms" type="checkbox" class="form-check-input" name="terms" required>
                 <label for="terms" class="form-check-label">
-                    {{ __('By clicking Register, you agree to Selfgar Learning Platform’s terms & conditions, Privacy Policy and Cookie Policy') }}<span class="required">*</span>
+                    {{ __('By clicking Register, you agree to Non Stop Earning - Learning Platform’s terms & conditions, Privacy Policy and Cookie Policy') }}<span class="required">*</span>
                 </label>
             </div>
 
             <button type="submit" class="btn btn-black mt-4">
                 {{ __('Sign Up') }}
             </button>
-
-            <div class="mt-4 text-center">
-                <span>{{ __('Already have an account?') }}</span>
-                <a href="{{ route('login') }}" class="text-link">{{ __('Login here') }}</a>
-            </div>
         </form>
+        <div class="mt-4 text-center">
+            <span>{{ __('Already have an account?') }}</span>
+            <a href="{{ route('login') }}" class="text-link">{{ __('Login here') }}</a>
+        </div>
     </div>
 </div>
 

@@ -14,7 +14,7 @@
                             <s>BDT 1000</s>
                             <strong class="text-danger">BDT 800</strong>
                         </p>
-                        <a href="#" class="btn btn-gradient">Order Now</a>
+                        <a href="{{ route('product_details') }}" class="btn btn-gradient">Order Now</a>
                     </div>
                 </div>
             </div>

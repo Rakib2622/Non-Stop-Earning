@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Belle Multipurpose Bootstrap 4 Html Template</title>
+<title>Non Stop Earning - NSE | Nonstopearning</title>
 <meta name="description" content="description">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Favicon -->
@@ -42,7 +42,7 @@
         <nav style="flex: 1; display: flex; justify-content: center;">
             <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
                 <li style="margin: 0 15px;"><a href="{{ route('home') }}" style="text-decoration: none; color: #333; transition: color 0.3s;">Home</a></li>
-                <li style="margin: 0 15px;"><a href="{{ route('product') }}" style="text-decoration: none; color: #333; transition: color 0.3s;">Product</a></li>
+                <li style="margin: 0 15px;"><a href="{{ route('products') }}" style="text-decoration: none; color: #333; transition: color 0.3s;">Product</a></li>
                 <li style="margin: 0 15px;"><a href="{{ route('about') }}" style="text-decoration: none; color: #333; transition: color 0.3s;">About Us</a></li>
                 <li style="margin: 0 15px;"><a href="{{ route('contact') }}" style="text-decoration: none; color: #333; transition: color 0.3s;">Contact</a></li>
             </ul>

@@ -1,5 +1,5 @@
 @include('frontend.header')
-
+ <br><br><br>
 <div id="page-content">
     <!--Page Title-->
     <div class="page section-header text-center">
@@ -44,5 +44,5 @@
     
 </div>
 
-
+<br>
 @include('frontend.footer')
